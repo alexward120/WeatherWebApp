@@ -118,7 +118,7 @@ h1 {
     background: #5372F0;
     border-radius: 5px;
     color: #fff;
-    margin: 0 4px;
+    margin: 4px 4px;
     width: calc(100% / 7);
     padding: 10px 0 10px 0;
     text-align: center;
@@ -147,4 +147,38 @@ h1 {
 
 ul {
     list-style: none;
+}
+
+@media (max-width: 1400px) {
+    .weather-data .current-weather {
+        padding: 20px
+    }
+    .weather-cards {
+        flex-wrap: wrap;
+    }
+    .weather-cards .card {
+        width: calc(100% / 7 - 15px)
+    }
+}
+
+@media (max-width: 1200px) {
+    .weather-cards .card {
+        width: calc(100% / 7 - 15px)
+    }
+}
+@media (max-width: 700px) {
+    .weather-cards .card {
+        width: calc(100% / 5 - 15px)
+        
+    }
+}
+@media (max-width: 675px) {
+    .weather-cards .card {
+        width: calc(100% / 4 - 15px)        
+    }
+    .container {
+        flex-wrap: wrap;
+        padding: 15px
+        
+    }
 }
